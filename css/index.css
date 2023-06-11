@@ -1,7 +1,14 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(224, 248, 249);
 }
 
 .title{
-  
+  text-align: center;
+  margin-top: 15%;
+}
+
+.cat {
+  width: 35%;
+  height: 35%;
+  padding-top: 5%;
 }

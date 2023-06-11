@@ -1,12 +1,12 @@
 
 /* INDEX PAGE */
 
-.title{
+.welcome{
   text-align: center;
   margin-top: 15%;
 }
 
-.cat {
+.cat{
   width: 35%;
   height: 35%;
   padding-top: 5%;
@@ -14,7 +14,10 @@
 
 /* HTML PAGE */
 
-
+.langAnalogy{
+  margin-left: 5%;
+  opacity: 0.7;
+}
 
 /* CSS PAGE */
 

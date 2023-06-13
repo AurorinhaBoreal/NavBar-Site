@@ -3,12 +3,11 @@
 
 .welcome{
   text-align: center;
-  margin-top: 15%;
+  margin-top: 20vh;
 }
 
 .cat{
-  width: 35%;
-  height: 35%;
+  height: 25vh;
   padding-top: 5%;
 }
 

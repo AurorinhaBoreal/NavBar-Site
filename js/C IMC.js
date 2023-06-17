@@ -101,6 +101,4 @@ function CalcIMC() {
         // Caso VI - Não Identificado
         default: catIMC = "Não Identificada"; break;
     };
-
-    alert(`${peso} | ${altura} | ${IMC} | ${catIMC}`)
 };

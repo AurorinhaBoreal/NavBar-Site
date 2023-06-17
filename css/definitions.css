@@ -29,7 +29,9 @@
 /* MER PAGE */
 
 .imgMER{
-  margin: 2% 0% 2% 20%;
+  margin: 0% 0% 2% 20%;
+  border-radius: 6%;
+  border: rgb(1, 1, 107) solid 2px;
 }
 
 

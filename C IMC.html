@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./css/dinamics.css">
+  <link rel="stylesheet" href="/css/IMC.css">
   <script src="./js/boostrap/bootstrap.bundle.min.js"></script>
+  <script src="./js/C IMC.js"></script>
   <title>Cálculo IMC</title>
 </head>
 <body>
@@ -63,6 +66,44 @@
     </div>
   </nav>
 
-  
+  <center>
+  <div id="divIMC">
+
+    <h2 class="title">IMC</h2>
+
+    <form>
+      <p>Insira seu peso e altura para o calculo do seu IMC</p>
+
+      <div class="divForms">
+        <p>Peso: <label for="Peso"></label>
+        <input type="number" id="getPes" name="Peso" maxlength="5" placeholder="24.57" required> </p>
+
+        <p>Altura: <label for="Altura"></label>
+        <input type="number" id="getAlt" name="Altura" maxlength="4" placeholder="1.82" required> </p>
+      </div>
+      
+      <p>
+        <input type="button" id="bSendIMC" class="formsButton" value="Calcular" onclick="CalcIMC()">
+      </p>
+
+    </form>
+
+    <hr class="divisor">
+    
+    <p class="subTitle">Resultados</p>
+
+    <form>
+      
+      <div class="divRes">
+        <p>IMC: <label for="IMC"></label>
+        <input type="text" id="sendIMC" name="IMC" maxlength="4" placeholder="-" disabled></p>
+
+        <p>Categoria: <label for="Categoria"></label>
+        <input type="text" id="sendCat" name="Categoria" maxlength="20" placeholder="-" disabled></p>
+      </div>
+
+    </form>
+  </div>
+  </center>
 </body>
 </html>

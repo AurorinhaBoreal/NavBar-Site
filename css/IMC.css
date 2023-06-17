@@ -1,0 +1,81 @@
+/* DIV IMC */
+
+#divIMC{
+    margin: 8% 30% 5% 35%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: rgb(1, 1, 107) solid 2px;
+    border-radius: 2%;
+}
+
+/* FORMS IMC */
+
+#getAlt, #getPes{
+    display: table-cell;    
+    margin: 3%;
+    border-color: rgb(224, 248, 249);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* FORMS RESULT */
+
+.formsResult, #sendIMC, #sendCat{
+    margin: 3%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+/* WHEN GET IMC - DIFFERENT COLORS  */
+
+.afterSendIMCMag{
+    color: #4c8fd1;
+}
+
+.afterSendIMCNor{
+    color: #62e764;
+}
+.afterSendIMCSob{
+    color: #f2e874;
+}
+.afterSendIMCOb1{
+    color: #f0b762;
+}
+.afterSendIMCOb2{
+    color: #e15c52;
+}
+.afterSendIMCOb3{
+    color: #610a0a;
+}
+/* WHEN GET CATEGORY - DIFFERENT CATEGORIES */
+
+.afterSendCatMag{
+    background-color: #4c8fd1;
+    color: #000;
+}
+
+.afterSendCatNor{
+    background-color: #62e764;
+    color: #000;
+}
+
+.afterSendCatSob{
+    background-color: #f2e874;
+    color: #000;
+}
+
+.afterSendCatOb1{
+    background-color: #f0b762;
+    color: #000;
+}
+
+.afterSendCatOb2{
+    background-color: #e15c52;
+    color: #000;
+}
+
+.afterSendCatOb3{
+    background-color: #610a0a;
+    color: #fff;
+}

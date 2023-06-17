@@ -7,7 +7,7 @@ p {
     font-style: italic;
 }
 
-/* TEXT */
+/* TITLE */
 .title {
     color: rgb(1, 1, 107);
     margin: 3% 3% 3% 2%;
@@ -23,6 +23,7 @@ p {
     border-radius: 10%;
 }
 
+/* TEXT */
 .text {
     text-align: justify;
     color: rgba(0, 0, 0, 0.7);

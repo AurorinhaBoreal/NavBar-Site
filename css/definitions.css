@@ -34,5 +34,16 @@
   border: rgb(1, 1, 107) solid 2px;
 }
 
+/* DER PAGE */
+
+.imgDER{
+  margin-left: 15%;
+  margin-bottom: 2%;
+  border-radius: 6%;
+  border: rgb(1, 1, 107) solid 2px;
+  height: 80vmin;
+}
+
+
 
 

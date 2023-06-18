@@ -1,0 +1,43 @@
+/* DIV JUROS */
+
+#divFees{
+    margin: 8% 35% 5% 35%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: rgb(1, 1, 107) solid 2px;
+    border-radius: 2%;
+}
+
+/* DIV DESCRIPTION */
+.divDesc{
+    width: 46vmin;
+    height: auto;
+    text-align: justify;
+}
+
+
+/* FORMS IMC */
+
+#getIte, #getPri, #getFees, #getPar{
+    display: table-cell;
+    margin: 3%;
+    border-color: rgb(224, 248, 249);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* DIVISOR LINE */
+hr.divisor{
+    width: 46vmin;
+    border-top: 8px solid #4c8fd1;
+    border-radius: 5px;
+}
+
+/* FORMS RESULT */
+
+#sendIC, #sendPP{
+    margin: 3%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}

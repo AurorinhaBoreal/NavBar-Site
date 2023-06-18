@@ -7,6 +7,15 @@
     border-radius: 2%;
 }
 
+
+/* DIV DESCRIPTION */
+.divDesc{
+    width: 40vmin;
+    height: auto;
+    text-align: justify;
+}
+
+
 /* FORMS IMC */
 
 #getAlt, #getPes{
@@ -16,6 +25,14 @@
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+/* DIVISOR LINE */
+
+hr.divisor{
+    width: 40vmin;
+    border-top: 8px solid #4c8fd1;
+    border-radius: 5px;
 }
 
 /* FORMS RESULT */
@@ -48,6 +65,7 @@
 .afterSendIMCOb3{
     color: #610a0a;
 }
+
 /* WHEN GET CATEGORY - DIFFERENT CATEGORIES */
 
 .afterSendCatMag{

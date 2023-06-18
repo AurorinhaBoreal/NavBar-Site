@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./css/dinamics.css">
+  <link rel="stylesheet" href="/css/juros.css">
   <script src="./js/boostrap/bootstrap.bundle.min.js"></script>
+  <script defer src="js/C Juros.js"></script>
   <title>Cálculo Juros</title>
 </head>
 <body>
@@ -64,5 +67,52 @@
   </nav>
 
   
+  <center>
+    <div id="divFees">
+  
+      <h2 class="title">Cálculo de Juros Compostos</h2>
+  
+      <form>
+
+        <div class="divDesc">
+          <h5>Esse formulário foi criado para calcular o financiamento de determinados produtos, porém, 
+          ele também permite calcular o parcelamento de produtos com valores menores.</h5>
+        </div>
+  
+        <div class="divForms">
+          <p> <label for="IaC">Item a Comprar:</label>
+          <input type="text" id="getIte" name="IaC" maxlength="20" placeholder="Geladeira" required> </p>
+  
+          <p> <label for="Preco">Preço:</label>
+          <input type="text" id="getPri" name="Preco" maxlength="15" placeholder="R$3.400" onchange="formatPrice()" required> </p>
+
+          <p> <label for="Juros">Juros Mensal: (%)</label>
+          <input type="number" id="getFees" name="Juros" maxlength="5" placeholder="1.82%" onchange="formatFees()" required> </p>
+
+          <p> <label for="Parcelas">Parcelas:</label>
+            <input type="number" id="getPar" name="Parcelas" maxlength="2" placeholder="12" required> </p>
+        </div>
+        
+          <input type="button" id="bSendIMC" class="formsButton" value="Calcular" onclick="calcJuros()">
+  
+      </form>
+  
+      <hr class="divisor">
+      
+      <p class="subTitle">Resultados</p>
+  
+      <form>
+        
+        <div class="divRes">
+          <p>Item Comprado: <label for="ItemCom"></label>
+          <input type="text" id="sendIC" name="ItemCom" maxlength="20" placeholder="-" disabled></p>
+  
+          <p>Preço Parcelado: <label for="PrecoP"></label>
+          <input type="text" id="sendPP" name="PrecoP" maxlength="20" placeholder="-" disabled></p>
+        </div>
+  
+      </form>
+    </div>
+    </center>
 </body>
 </html>

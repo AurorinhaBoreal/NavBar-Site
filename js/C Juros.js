@@ -141,8 +141,6 @@ function formatPrice() {
     precoT = precoT.toFixed(2);
     precoT = precoT.toString();
 
-    alert(precoT)
-
     document.getElementById("sendIC").value = item;
     document.getElementById("sendPP").value = 'R$' + precoT;
     

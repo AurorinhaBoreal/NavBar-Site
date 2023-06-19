@@ -14,7 +14,7 @@
 <body>
   
   <!-- Expansible Menu -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,15 +68,53 @@
 
   
   <center>
-    <div id="divIMC">
+    <div id="divPri">
   
-      <h2 class="title">IMC</h2>
+      <h2 class="title">Preço de Venda</h2>
   
       <form>
         <div class="divDesc">
           <h5>Insira as informações referentes ao produto, para a definição adequada de preço.</h5>
         </div>
   
+        
+        <div class="divForms">
+          <p> <label for="Item">Item:</label>
+          <input type="text" id="getIte" name="Item" maxlength="20" placeholder="Computador" required> </p>
+  
+          <p> <label for="Preco">Custo do Produto:</label>
+          <input type="text" id="getPri" name="Preco" maxlength="15" placeholder="R$3.400" onchange="formatPrice()" required> </p>
+
+          <p> <label for="Juros">Lucro Desejado:</label>
+          <input type="number" id="getPro" name="Juros" maxlength="5" placeholder="1.82%" onchange="formatFees()" required> </p>
+
+          <p> <label for="Parcelas">Preço do Transporte:</label>
+            <input type="number" id="getTransportPri" name="Parcelas" maxlength="2" placeholder="12" required> </p>
+
+          <p> <label for="Parcelas">Preço da Armazenagem:</label>
+            <input type="number" id="getStockPri" name="Parcelas" maxlength="2" placeholder="12" required> </p>
+
+            <p> <label for="Parcelas">Comissão:</label>
+              <input type="number" id="getCom" name="Parcelas" maxlength="2" placeholder="12" required> </p>
+        </div>
+        
+          <input type="button" id="bSendIMC" class="formsButton" value="Calcular" onclick="calcJuros()">
+  
+      </form>
+  
+      <hr class="divisor">
+      
+      <p class="subTitle">Resultados</p>
+  
+      <form>
+        
+        <div class="divRes">
+          <p>Item Comprado: <label for="ItemCom"></label>
+          <input type="text" id="sendIC" name="ItemCom" maxlength="20" placeholder="-" disabled></p>
+  
+          <p>Preço Parcelado: <label for="PrecoP"></label>
+          <input type="text" id="sendPP" name="PrecoP" maxlength="20" placeholder="-" disabled></p>
+        </div>
       </form>
     </div>
   </center>

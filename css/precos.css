@@ -1,0 +1,43 @@
+/* DIV PRICES */
+
+#divPri{
+    margin: 8% 32% 5% 32%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: rgb(1, 1, 107) solid 2px;
+    border-radius: 2%;
+}
+
+/* DIV DESCRIPTION */
+.divDesc{
+    width: 54vmin;
+    height: auto;
+    text-align: justify;
+}
+
+
+/* FORMS IMC */
+
+#getItem, #getProdPri, #getPro, #getTransportPri, #getStockPri, #getCom{
+    display: table-cell;
+    margin: 3%;
+    border-color: rgb(224, 248, 249);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* DIVISOR LINE */
+hr.divisor{
+    width: 55vmin;
+    border-top: 8px solid #4c8fd1;
+    border-radius: 5px;
+}
+
+/* FORMS RESULT */
+
+#sendIN, #sendSellPri{
+    margin: 3%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}

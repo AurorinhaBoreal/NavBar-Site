@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./css/dinamics.css">
+  <link rel="stylesheet" href="./css/VD.css">
   <script src="./js/boostrap/bootstrap.bundle.min.js"></script>
+  <script src="./js/VD.js"></script>
   <title>Validação</title>
 </head>
 <body>
@@ -63,6 +66,100 @@
     </div>
   </nav>
 
+  <center>
+    <div id="divVal">
   
+      <h2 class="title">Validação de Dados</h2>
+  
+      <form>
+        <div class="divDesc">
+          <h5>Insira as informações requisitadas para fazer seu cadastro.</h5>
+        </div>
+        
+        <hr class="divisor">
+        
+        <div class="divForms">
+          <p> <label for="nome">Nome:</label> 
+            <input type="text" id="getName" name="nome" maxlength="40" placeholder="João Paulo" required> </p>
+          
+          <p> <label for="emailNome">Email:</label>
+              <input type="text" id="getEmailName" name="emailNome" maxlength="20" placeholder="exemplo" required>
+              <select class="selects" id="getEmailType" name="emailMarca">
+                <option value="1" selected>@gmail.com</option>
+                <option value="2">@hotmail.com</option>
+                <option value="3">@outlook.com</option>
+                <option value="4">@yahoo.com</option>
+              </select>
+          </p>
+
+          <p> <label for="telefone">Telefone:</label>
+            <input type="text" id="getCell" name="telefone" maxlength="15" placeholder="(99) 99999-9999" required> </p>
+
+          <p> <label for="estadoCivil">Estado Civil:</label>
+            <select class="selects" id="getCivilState" name="estadoCivil">
+              <option value="-1" selected>--</option>
+              <option value="1">Solteiro/a</option>
+              <option value="2">Comprometido/a</option>
+              <option value="3">Casado/a</option>
+              <option value="4">Viuvo/a</option>
+            </select> </p>
+
+          <p> <label for="CPF">CPF:</label>
+            <input type="text" id="getCPF" name="CPF" maxlength="14" placeholder="999.999.999-99" required> </p>
+
+          <p> <label for="CEP">CEP:</label>
+            <input type="text" id="getCEP" name="CEP" maxlength="9" placeholder="99999-999" required> </p>
+
+          <p> <label for="estado">Estado:</label>
+          <input type="text" id="getState" name="estado" maxlength="30" placeholder="São Paulo" required> </p>
+
+          <p> <label for="UF">UF:</label>
+            <select class="selects" id="getUF" name="UF"> 
+              <option value="-1" selected>--</option>
+              <option value="1">AC</option>
+              <option value="2">AL</option>
+              <option value="3">AP</option>
+              <option value="4">AM</option>
+              <option value="5">BA</option>
+              <option value="6">CE</option>
+              <option value="7">DF</option>
+              <option value="8">ES</option>
+              <option value="9">GO</option>
+              <option value="10">MA</option>
+              <option value="11">MT</option>
+              <option value="12">MS</option>
+              <option value="13">MG</option>
+              <option value="14">PA</option>
+              <option value="15">PB</option>
+              <option value="16">PR</option>
+              <option value="17">PE</option>
+              <option value="18">PI</option>
+              <option value="19">RJ</option>
+              <option value="20">RN</option>
+              <option value="21">RS</option>
+              <option value="22">RO</option>
+              <option value="23">RR</option>
+              <option value="24">SC</option>
+              <option value="25">SP</option>
+              <option value="26">SE</option>
+              <option value="27">TO</option>
+            </select>
+            </p>
+
+          <p> <label for="cidade">Cidade:</label>
+            <input type="text" id="getCity" name=cidade" maxlength="20" placeholder="Taboão da Serra" required> </p>
+
+          <p> <label for="bairro">Bairro:</label>
+          <input type="text" id="getDis" name="bairro" maxlength="20" placeholder="Jardim das Margaridas" required> </p>
+
+          <p> <label for="endereco">Endereço:</label>
+          <input type="text" id="getAdr" name="endereco" maxlength="30" placeholder="Rua das Laranjeiras, 402" required> </p>
+        </div>
+        
+          <input type="button" id="bSendVal" class="formsButton" value="Cadastrar">
+  
+      </form>
+    </div>
+  </center>
 </body>
 </html>

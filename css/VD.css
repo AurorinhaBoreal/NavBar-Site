@@ -1,0 +1,54 @@
+/* DIV VALIDAÇÃO */
+
+#divVal{
+    margin: 8% 30% 5% 30%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: rgb(1, 1, 107) solid 2px;
+    border-radius: 2%;
+}
+
+/* DIV DESCRIPTION */
+.divDesc{
+    width: 60vmin;
+    height: auto;
+    text-align: justify;
+}
+
+/* DIV FORMS */
+.divForms{
+    margin: 0%;
+    width: 60vmin;
+}
+
+/* FORMS CADASTRO */
+
+#getName, #getEmailName, #getEmailType, #getCell, 
+#getCivilState, #getCPF, #getCEP, #getState, #getUF, 
+#getCity, #getDis, #getAdr{
+    display: table-cell;
+    margin: 2%;
+    border-color: rgb(224, 248, 249);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* NAME INPUT */
+#getName{
+    width: 46vmin;
+}
+
+/* EMAIL INPUT */
+#getEmailName, #getEmailType{
+    width: 22vmin;
+    margin: 1%;
+    height: 4vmin;
+}
+
+/* DIVISOR LINE */
+hr.divisor{
+    width: 60vmin;
+    border-top: 8px solid #4c8fd1;
+    border-radius: 5px;
+}

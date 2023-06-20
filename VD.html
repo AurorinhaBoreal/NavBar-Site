@@ -84,7 +84,7 @@
           
           <p> <label for="emailNome">Email:</label>
               <input type="text" id="getEmailName" name="emailNome" maxlength="20" placeholder="exemplo" required>
-              <select class="selects" id="getEmailType" name="emailMarca">
+              <select class="selects" id="getEmailType" name="emailMarca" required>
                 <option value="1" selected>@gmail.com</option>
                 <option value="2">@hotmail.com</option>
                 <option value="3">@outlook.com</option>
@@ -93,10 +93,10 @@
           </p>
 
           <p> <label for="telefone">Telefone:</label>
-            <input type="text" id="getCell" name="telefone" maxlength="15" placeholder="(99) 99999-9999" required> </p>
+            <input type="text" id="getCell" name="telefone" maxlength="15" placeholder="(99) 99999-9999" onchange="formatCell()" required> </p>
 
           <p> <label for="estadoCivil">Estado Civil:</label>
-            <select class="selects" id="getCivilState" name="estadoCivil">
+            <select class="selects" id="getCivilState" name="estadoCivil" required>
               <option value="-1" selected>--</option>
               <option value="1">Solteiro/a</option>
               <option value="2">Comprometido/a</option>
@@ -105,10 +105,10 @@
             </select> </p>
 
           <p> <label for="CPF">CPF:</label>
-            <input type="text" id="getCPF" name="CPF" maxlength="14" placeholder="999.999.999-99" required> </p>
+            <input type="text" id="getCPF" name="CPF" maxlength="14" placeholder="999.999.999-99" onchange="formatCPF()" required> </p>
 
           <p> <label for="CEP">CEP:</label>
-            <input type="text" id="getCEP" name="CEP" maxlength="9" placeholder="99999-999" required> </p>
+            <input type="text" id="getCEP" name="CEP" maxlength="9" placeholder="99999-999" onchange="formatCEP()"> </p>
 
           <p> <label for="estado">Estado:</label>
           <input type="text" id="getState" name="estado" maxlength="30" placeholder="São Paulo" required> </p>
@@ -150,14 +150,19 @@
             <input type="text" id="getCity" name=cidade" maxlength="20" placeholder="Taboão da Serra" required> </p>
 
           <p> <label for="bairro">Bairro:</label>
-          <input type="text" id="getDis" name="bairro" maxlength="20" placeholder="Jardim das Margaridas" required> </p>
+          <input type="text" id="getDis" name="bairro" maxlength="20" placeholder="Jardim das Margaridas"> </p>
 
           <p> <label for="endereco">Endereço:</label>
-          <input type="text" id="getAdr" name="endereco" maxlength="30" placeholder="Rua das Laranjeiras, 402" required> </p>
+          <input type="text" id="getAdr" name="endereco" maxlength="30" placeholder="Rua das Laranjeiras, 402"> </p>
         </div>
         
-          <input type="button" id="bSendVal" class="formsButton" value="Cadastrar">
-  
+        <div>
+          <span class="popuptext" id="myPopup">Seu Cadastro foi realizado com sucesso!</span>
+          <button type="submit" id="bSendVal" class="formsButton" onclick="popUpValidation();">Cadastrar
+            
+          </button>
+        </div>
+
       </form>
     </div>
   </center>

@@ -98,7 +98,6 @@ function calcPri() {
   var precoVendaF = precoVenda.toString();
 
   function formatSellPri() {
-    alert("Aqui está " + precoVendaF)
     precoVendaF = precoVendaF.split('.').join('');
   
     // Caso o preço de venda seja maior que 6 digitos
